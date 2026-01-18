@@ -9,7 +9,7 @@ export default antfu({
   // Enforce <template> at top of file, then script, then style
     'vue/block-order': [
       'error',
-      { order: ['template', 'script', 'style'] },
+      { order: ['script', 'template', 'style'] },
     ],
 
     // Enforce new line between each attribute

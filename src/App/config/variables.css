@@ -1,0 +1,14 @@
+:root {
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 3rem;
+
+    --radius-xs: 0.25rem;
+    --radius-sm: 0.5rem;
+
+    --z-index-xs: 1;
+    --z-index-sm: 5;
+    --z-index-md: 7;
+}
