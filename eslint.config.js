@@ -1,4 +1,5 @@
 import antfu from '@antfu/eslint-config'
+import format from 'eslint-plugin-format'
 
 export default antfu({
   vue: true,
@@ -6,7 +7,7 @@ export default antfu({
 }, {
   files: ['**/*.vue'],
   rules: {
-  // Enforce <template> at top of file, then script, then style
+    // Enforce <template> at top of file, then script, then style
     'vue/block-order': [
       'error',
       { order: ['script', 'template', 'style'] },
@@ -103,5 +104,16 @@ export default antfu({
 
     // Enforce refs to have defined types
     'vue/require-typed-ref': ['error'],
+  },
+}, {
+  files: ['**/*.css'],
+  languageOptions: {
+    parser: format.parserPlain,
+  },
+  plugins: {
+    format,
+  },
+  rules: {
+    'format/prettier': ['error', { parser: 'css', tabWidth: 2 }],
   },
 })

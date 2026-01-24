@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { useAttrs } from 'vue'
 import calculateStyleSize from '../lib/calculate-style-size'
 
 export interface PaperProps {

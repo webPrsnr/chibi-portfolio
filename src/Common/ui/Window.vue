@@ -67,16 +67,16 @@ const styleSize = calculateStyleSize(h, w)
   border-top-right-radius: 0;
   border-bottom-left-radius: var(--radius-sm);
   border-bottom-right-radius: var(--radius-sm);
-  background-color: #FFF;
+  background-color: #fff;
 }
 
-.window-text{
+.window-text {
   text-transform: uppercase;
-  &::before{
-    content: '~~~';
+  &::before {
+    content: "~~~";
   }
-  &::after{
-    content: '~~~';
+  &::after {
+    content: "~~~";
   }
 }
 </style>
