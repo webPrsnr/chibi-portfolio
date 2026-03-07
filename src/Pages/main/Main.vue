@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Text from '@/Common/ui/Text.vue'
-import Window from '@/Common/ui/Window.vue'
+import { Window } from '@/Modules/Window'
 </script>
 
 <template>

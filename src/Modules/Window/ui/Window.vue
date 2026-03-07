@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import type { PaperProps } from './Paper.vue'
+import type { PaperProps } from '@/Common/ui/Paper.vue'
 import { useAttrs } from 'vue'
-import calculateStyleSize from '../lib/calculate-style-size'
-import Paper from './Paper.vue'
-import Text from './Text.vue'
+import calculateStyleSize from '@/Common/lib/calculate-style-size'
+import Paper from '@/Common/ui/Paper.vue'
+import Text from '@/Common/ui/Text.vue'
 
 interface WindowProps extends PaperProps {
   title: string
