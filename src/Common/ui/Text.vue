@@ -4,7 +4,7 @@ import type { SizeType } from '../types/font/sizes'
 import type { FontWeightType } from '../types/font/weight'
 import { calculateStyleFont } from '../lib/calculate-style-font'
 
-interface TextProps {
+export interface TextProps {
   span?: boolean
   fz?: SizeType
   fn?: FontNameStyles

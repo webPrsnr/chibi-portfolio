@@ -45,7 +45,7 @@ function createFontSize(fz: SizeType): string | undefined {
   }
 }
 
-interface CalculateStyleFontArgs {
+export interface CalculateStyleFontArgs {
   fz?: SizeType
   fn?: FontNameStyles
   fw?: FontWeightType
