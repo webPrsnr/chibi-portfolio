@@ -1,9 +1,16 @@
 import antfu from '@antfu/eslint-config'
 import format from 'eslint-plugin-format'
+import a11y from 'eslint-plugin-vuejs-accessibility'
 
 export default antfu({
   vue: true,
   typescript: true,
+  plugins: {
+    'vuejs-accessibility': a11y,
+  },
+  rules: {
+    ...a11y.configs.recommended.rules,
+  },
 }, {
   files: ['**/*.vue'],
   rules: {
