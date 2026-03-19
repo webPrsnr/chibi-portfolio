@@ -14,7 +14,10 @@ const { t } = useI18n()
       w="40%"
       style="flex:1"
     >
-      <Text fw="bold">
+      <Text
+        fw="bold"
+        fz="xl"
+      >
         {{ t('home.test') }}
       </Text>
     </Window>
