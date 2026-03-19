@@ -1,6 +1,9 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 import Text from '@/Common/ui/Text.vue'
 import { Window } from '@/Modules/Window'
+
+const { t } = useI18n()
 </script>
 
 <template>
@@ -12,7 +15,7 @@ import { Window } from '@/Modules/Window'
       style="flex:1"
     >
       <Text fw="bold">
-        hello world
+        {{ t('home.test') }}
       </Text>
     </Window>
   </section>
