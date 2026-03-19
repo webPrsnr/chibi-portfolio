@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 import Text from '@/Common/ui/Text.vue'
+import { DialogBox } from '@/Modules/DialogBox'
 import { Window } from '@/Modules/Window'
 
 const { t } = useI18n()
@@ -20,6 +21,11 @@ const { t } = useI18n()
       >
         {{ t('home.test') }}
       </Text>
+
+      <DialogBox
+        text="Some reandom text"
+        title="Title"
+      />
     </Window>
   </section>
 </template>
