@@ -1,6 +1,6 @@
 import type { StyleValue } from 'vue'
 import { describe, expect, it } from 'vitest'
-import calculateStyleSize from '../calculate-style-size'
+import { calculateStyleSize } from '../calculate-style-size'
 
 describe('calculateStyleSize', () => {
   const sizes: [string | number | undefined, string | number | undefined, StyleValue][] = [

@@ -1,7 +1,7 @@
 import type { StyleValue } from 'vue'
-import type { FontNameStyles } from '../types/font/names'
-import type { SizeType } from '../types/font/sizes'
-import type { FontWeightType } from '../types/font/weight'
+import type { FontNameStyles } from '../../types/font/names'
+import type { SizeType } from '../../types/font/sizes'
+import type { FontWeightType } from '../../types/font/weight'
 
 function createFontName(fs: FontNameStyles): string | undefined {
   switch (fs) {

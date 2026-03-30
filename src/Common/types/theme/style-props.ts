@@ -1,5 +1,5 @@
 import type { CSSProperties } from 'vue'
-import type { ChibiFontFamilies, ChibiFontSize, ChibiLineHeight, ChibiSpacing, DefaultChibiColor } from './theme'
+import type { ChibiDefaultColor, ChibiFontFamilies, ChibiFontSize, ChibiLineHeight, ChibiSpacing } from './theme'
 
 export interface ChibiStyleProps {
   m?: ChibiSpacing
@@ -17,8 +17,9 @@ export interface ChibiStyleProps {
   pl?: ChibiSpacing
   pr?: ChibiSpacing
   bd?: CSSProperties['border']
-  bg?: DefaultChibiColor
-  c?: DefaultChibiColor
+  bdrs?: CSSProperties['borderRadius']
+  bg?: ChibiDefaultColor
+  c?: ChibiDefaultColor
   opacity?: CSSProperties['opacity']
   ff?: ChibiFontFamilies
   fz?: ChibiFontSize

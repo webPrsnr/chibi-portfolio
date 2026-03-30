@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
+import Box from '@/Common/ui/Box.vue'
 import Text from '@/Common/ui/Text.vue'
 import { DialogBox } from '@/Modules/DialogBox'
 import { Window } from '@/Modules/Window'
@@ -8,12 +9,18 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <section class="main-section">
+  <Box
+    as="section"
+    h="100%"
+    w="100%"
+    display="flex"
+    class="main-section"
+  >
     <Window
       title="chibi_cv.EXE"
       h="90%"
       w="40%"
-      style="flex:1"
+      flex="1"
     >
       <Text
         fw="bold"
@@ -27,14 +34,11 @@ const { t } = useI18n()
         title="Title"
       />
     </Window>
-  </section>
+  </Box>
 </template>
 
 <style scoped>
 .main-section {
-  height: 100%;
-  width: 100%;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;

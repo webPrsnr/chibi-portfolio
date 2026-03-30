@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Paper from '@/Common/ui/Paper.vue'
+import Box from '@/Common/ui/Box.vue'
 import DialogBoxContainer from './DialogBoxContainer.vue'
 
 interface DialogBoxProps {
@@ -10,15 +10,9 @@ const { text, title } = defineProps<DialogBoxProps>()
 </script>
 
 <template>
-  <Paper class="root">
+  <Box px="xl">
     <DialogBoxContainer>
       hello wrold
     </DialogBoxContainer>
-  </Paper>
+  </Box>
 </template>
-
-<style scoped>
-.root {
-  padding-inline: var(--spacing-xl);
-}
-</style>

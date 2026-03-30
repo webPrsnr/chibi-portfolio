@@ -1,21 +1,23 @@
 <script setup lang="ts">
+import type { Component } from 'vue'
 import type { ChibiStyleProps } from '../types/theme/style-props'
 import { parseStyleProps } from '../lib/theme'
 
-export interface TextProps extends ChibiStyleProps {
-  span?: boolean
+interface BoxProps extends ChibiStyleProps {
+  as?: string | Component
 }
 
-const { span, ff = 'regular', ...rest } = defineProps<TextProps>()
+const {
+  as = 'div',
+  ...rest
+} = defineProps<BoxProps>()
 
-const style = parseStyleProps({ ff, ...rest })
-
-const tag = span ? 'span' : 'p'
+const style = parseStyleProps(rest)
 </script>
 
 <template>
   <component
-    :is="tag"
+    :is="as"
     :style="style"
   >
     <slot />

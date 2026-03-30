@@ -11,4 +11,19 @@
   --z-index-xs: 1;
   --z-index-sm: 5;
   --z-index-md: 7;
+
+  --font-family-regular: Roboto-regular, sans-serif;
+  --font-family-roboto: Pixelify-regular, sans-serif;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+
+  --font-lh-xs: 1.4rem;
+  --font-lh-sm: 1.5rem;
+  --font-lh-md: 1.6rem;
+  --font-lh-lg: 1.4rem;
+  --font-lh-xl: 1.2rem;
 }
